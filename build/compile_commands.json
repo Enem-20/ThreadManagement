@@ -1,8 +1,0 @@
-[
-{
-  "directory": "C:/Projects/check/ThreadManagement/build",
-  "command": "c:\\compilers\\llvm-mingw-20250613-ucrt-x86_64\\llvm-mingw-20250613-ucrt-x86_64\\bin\\clang++.exe -DTHREAD_MANAGEMENT_EXPORTS -DThreadManagement_EXPORTS -IC:/Projects/check/ThreadManagement/src -g -std=c++20 -o CMakeFiles\\ThreadManagement.dir\\src\\TaskScheduler.cpp.obj -c C:\\Projects\\check\\ThreadManagement\\src\\TaskScheduler.cpp",
-  "file": "C:\\Projects\\check\\ThreadManagement\\src\\TaskScheduler.cpp",
-  "output": "CMakeFiles\\ThreadManagement.dir\\src\\TaskScheduler.cpp.obj"
-}
-]
