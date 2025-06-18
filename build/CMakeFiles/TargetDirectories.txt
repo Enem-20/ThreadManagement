@@ -1,0 +1,3 @@
+C:/Projects/check/ThreadManagement/build/CMakeFiles/ThreadManagement.dir
+C:/Projects/check/ThreadManagement/build/CMakeFiles/edit_cache.dir
+C:/Projects/check/ThreadManagement/build/CMakeFiles/rebuild_cache.dir

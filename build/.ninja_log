@@ -1,0 +1,10 @@
+# ninja log v6
+2	17	7719133218403719	C:/Projects/check/ThreadManagement/build/CMakeFiles/cmake.verify_globs	ea9d1aed8dd67199
+2	18	7719133541914128	C:/Projects/check/ThreadManagement/build/CMakeFiles/cmake.verify_globs	ea9d1aed8dd67199
+19	1149	7719133542074180	CMakeFiles/ThreadManagement.dir/src/TaskScheduler.cpp.obj	f2b7a24dc4e7a6b8
+1153	1230	7719133554052361	libThreadManagement.dll	8aeda8bce22b0071
+1153	1230	7719133554052361	libThreadManagement.dll.a	8aeda8bce22b0071
+14	29	7719135862040321	C:/Projects/check/ThreadManagement/build/CMakeFiles/cmake.verify_globs	ea9d1aed8dd67199
+34	1145	7719135862240355	CMakeFiles/ThreadManagement.dir/src/TaskScheduler.cpp.obj	f2b7a24dc4e7a6b8
+1146	1229	7719135874050676	libThreadManagement.dll	8aeda8bce22b0071
+1146	1229	7719135874050676	libThreadManagement.dll.a	8aeda8bce22b0071

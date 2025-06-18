@@ -1,0 +1,130 @@
+{
+	"kind" : "toolchains",
+	"toolchains" : 
+	[
+		{
+			"compiler" : 
+			{
+				"id" : "Clang",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"C:/compilers/llvm-mingw-20250613-ucrt-x86_64/llvm-mingw-20250613-ucrt-x86_64/lib/clang/20/include",
+						"C:/compilers/llvm-mingw-20250613-ucrt-x86_64/llvm-mingw-20250613-ucrt-x86_64/include"
+					],
+					"linkDirectories" : 
+					[
+						"C:/compilers/llvm-mingw-20250613-ucrt-x86_64/llvm-mingw-20250613-ucrt-x86_64/x86_64-w64-mingw32/lib",
+						"C:/compilers/llvm-mingw-20250613-ucrt-x86_64/llvm-mingw-20250613-ucrt-x86_64/x86_64-w64-mingw32/mingw/lib",
+						"C:/compilers/llvm-mingw-20250613-ucrt-x86_64/llvm-mingw-20250613-ucrt-x86_64/lib",
+						"C:/compilers/llvm-mingw-20250613-ucrt-x86_64/llvm-mingw-20250613-ucrt-x86_64/lib/clang/20/lib/windows"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"mingw32",
+						"unwind",
+						"moldname",
+						"mingwex",
+						"advapi32",
+						"shell32",
+						"user32",
+						"kernel32",
+						"mingw32",
+						"unwind",
+						"moldname",
+						"mingwex",
+						"kernel32"
+					]
+				},
+				"path" : "c:/compilers/llvm-mingw-20250613-ucrt-x86_64/llvm-mingw-20250613-ucrt-x86_64/bin/clang.exe",
+				"version" : "20.1.7"
+			},
+			"language" : "C",
+			"sourceFileExtensions" : 
+			[
+				"c",
+				"m"
+			]
+		},
+		{
+			"compiler" : 
+			{
+				"id" : "Clang",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"C:/compilers/llvm-mingw-20250613-ucrt-x86_64/llvm-mingw-20250613-ucrt-x86_64/include/c++/v1",
+						"C:/compilers/llvm-mingw-20250613-ucrt-x86_64/llvm-mingw-20250613-ucrt-x86_64/lib/clang/20/include",
+						"C:/compilers/llvm-mingw-20250613-ucrt-x86_64/llvm-mingw-20250613-ucrt-x86_64/include"
+					],
+					"linkDirectories" : 
+					[
+						"C:/compilers/llvm-mingw-20250613-ucrt-x86_64/llvm-mingw-20250613-ucrt-x86_64/x86_64-w64-mingw32/lib",
+						"C:/compilers/llvm-mingw-20250613-ucrt-x86_64/llvm-mingw-20250613-ucrt-x86_64/x86_64-w64-mingw32/mingw/lib",
+						"C:/compilers/llvm-mingw-20250613-ucrt-x86_64/llvm-mingw-20250613-ucrt-x86_64/lib",
+						"C:/compilers/llvm-mingw-20250613-ucrt-x86_64/llvm-mingw-20250613-ucrt-x86_64/lib/clang/20/lib/windows"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"c++",
+						"mingw32",
+						"unwind",
+						"moldname",
+						"mingwex",
+						"advapi32",
+						"shell32",
+						"user32",
+						"kernel32",
+						"mingw32",
+						"unwind",
+						"moldname",
+						"mingwex",
+						"kernel32"
+					]
+				},
+				"path" : "c:/compilers/llvm-mingw-20250613-ucrt-x86_64/llvm-mingw-20250613-ucrt-x86_64/bin/clang++.exe",
+				"version" : "20.1.7"
+			},
+			"language" : "CXX",
+			"sourceFileExtensions" : 
+			[
+				"C",
+				"M",
+				"c++",
+				"cc",
+				"cpp",
+				"cxx",
+				"mm",
+				"mpp",
+				"CPP",
+				"ixx",
+				"cppm",
+				"ccm",
+				"cxxm",
+				"c++m"
+			]
+		},
+		{
+			"compiler" : 
+			{
+				"implicit" : {},
+				"path" : "C:/compilers/llvm-mingw-20250613-ucrt-x86_64/llvm-mingw-20250613-ucrt-x86_64/bin/windres.exe"
+			},
+			"language" : "RC",
+			"sourceFileExtensions" : 
+			[
+				"rc",
+				"RC"
+			]
+		}
+	],
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}
