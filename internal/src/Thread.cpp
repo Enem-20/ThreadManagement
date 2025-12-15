@@ -36,7 +36,7 @@ public:
 Thread::Thread(std::string_view name) 
 	: _impl(new ThreadImpl(name))
 {
-	//ThreadManager::getInstance()->emplaceThread(this);
+	ThreadManager::getInstance()->emplaceThread(this);
 }
 
 void Thread::push(const std::function<void()>& func) {
