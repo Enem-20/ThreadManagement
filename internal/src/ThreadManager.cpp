@@ -29,6 +29,8 @@ public:
 	}
 };
 
+ThreadManager* ThreadManager::_instance;
+
 ThreadManager::ThreadManager() {
 	_impl = new ThreadManagerImpl();
 }
