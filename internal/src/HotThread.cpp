@@ -12,7 +12,14 @@ class HotThreadImpl {
 	EventLoop _loop;
 	std::jthread* _thread;
 	bool _exitRequested;
+	size_t _id;
 public:
+	HotThreadImpl() 
+		: _thread(nullptr)
+		, _exitRequested(false)
+		, _id(0)
+	{}
+	
 	~HotThreadImpl() {
 		if(_thread) [[unlikely]]
 			delete _thread;
@@ -28,6 +35,7 @@ public:
 			_exitRequested = true;
 			std::cout << "Exitting from hot thread\n";
 		});
+		_id = std::hash<std::jthread::id>{}(_thread->get_id());
 	}
 
 	void requestExit() {
@@ -40,6 +48,10 @@ public:
 
 	void push(const std::function<void()>& task) {
 		_loop.push(task);
+	}
+
+	size_t getId() const {
+		return _id;
 	}
 };
 
@@ -65,4 +77,8 @@ void HotThread::requestExit() {
 
 void HotThread::push(const std::function<void()>& task) {
 	_impl->push(task);
+}
+
+size_t HotThread::getId() const {
+	return _impl->getId();
 }

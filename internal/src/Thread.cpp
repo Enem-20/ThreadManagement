@@ -7,12 +7,15 @@
 #include "ThreadManager.hpp"
 
 class ThreadImpl {
+	std::string _name;
 	EventLoop _loop;
 	std::jthread* _thread;
-	std::string _name;
+	size_t _id;
 public:
 	ThreadImpl(std::string_view name) 
 		: _name(name)
+		, _thread(nullptr)
+		, _id(0)
 	{
 		std::cout << "Thread impl created\n";
 	}
@@ -26,10 +29,15 @@ public:
 
 	void execute() {
 		_thread = new std::jthread(std::bind(&EventLoop::execute, &_loop));
+		_id = std::hash<std::jthread::id>{}(std::this_thread::get_id());
 	}
 
 	std::string_view getName() const {
 		return _name;
+	}
+
+	size_t getId() const {
+		return _id;
 	}
 };
 
@@ -49,4 +57,8 @@ void Thread::execute() {
 
 std::string_view Thread::getName() const {
 	return _impl->getName();
+}
+
+size_t Thread::getId() const {
+	return _impl->getId();
 }

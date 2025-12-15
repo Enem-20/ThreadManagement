@@ -18,6 +18,8 @@ public:
 	void requestExit();
 
 	void push(const std::function<void()>& task);
+	
+	size_t getId() const;
 };
 
 #endif // C_HOT_THREAD_HPP
