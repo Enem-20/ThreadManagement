@@ -6,6 +6,7 @@
 
 class ThreadManagerImpl {
 	tsl::hopscotch_map<std::string, Thread*> _threads;
+	//tsl::hopscotch_map<size_t, Thread*> _threadsById;
 public:
 	ThreadManagerImpl() {
 		

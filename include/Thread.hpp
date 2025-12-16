@@ -15,6 +15,8 @@ public:
 	void execute();
 
 	std::string_view getName() const;
+
+	size_t getId() const;
 };
 
 #endif // C_THREAD_HPP

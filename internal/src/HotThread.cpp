@@ -14,14 +14,22 @@ class HotThreadImpl {
 	bool _exitRequested;
 	size_t _id;
 public:
+	HotThreadImpl(size_t id) 
+		: _thread(nullptr)
+		, _exitRequested(false)
+		, _id(id)
+	{
+		
+	}
+
 	HotThreadImpl() 
 		: _thread(nullptr)
 		, _exitRequested(false)
 		, _id(0)
 	{}
-	
+
 	~HotThreadImpl() {
-		if(_thread) [[unlikely]]
+		if(_thread) [[likely]]
 			delete _thread;
 	}
 
@@ -42,7 +50,7 @@ public:
 		_exitRequested = true;
 	}
 
-	bool exiting() {
+	bool requestedExit() const {
 		return _exitRequested;
 	}
 
@@ -54,6 +62,10 @@ public:
 		return _id;
 	}
 };
+
+HotThread::HotThread(size_t id) 
+	: _impl(new HotThreadImpl(id))
+{}
 
 HotThread::HotThread() 
 	: _impl(new HotThreadImpl())
@@ -81,4 +93,8 @@ void HotThread::push(const std::function<void()>& task) {
 
 size_t HotThread::getId() const {
 	return _impl->getId();
+}
+
+bool HotThread::requestedExit() const {
+	return _impl->requestedExit();
 }
